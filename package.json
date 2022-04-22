@@ -1,11 +1,14 @@
 {
-  "name": "react-backoffice",
+  "name": "kiman-resume",
+  "homepage": "https://arthurfire.github.io/resume",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.0.0",
@@ -17,6 +20,7 @@
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^1.3.0",
     "babel-loader": "^8.2.4",
+    "gh-pages": "^3.2.3",
     "prettier": "2.6.2",
     "typescript": "^4.6.3",
     "vite": "^2.9.5"
